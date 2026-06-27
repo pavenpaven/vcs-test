@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cscunvgmfla7u"]
+[gd_scene load_steps=4 format=3 uid="uid://cscunvgmfla7u"]
 
 [ext_resource type="PackedScene" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://b5x6smggfbiou" path="res://Scenes/camera_2d.gd" id="2_qxrlw"]
 
 [sub_resource type="GDScript" id="GDScript_2poj3"]
 script/source = "extends Node2D
@@ -26,3 +27,6 @@ script = SubResource("GDScript_2poj3")
 position = Vector2(134, 91)
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_qxrlw")
