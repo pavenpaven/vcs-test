@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cscunvgmfla7u"]
+[gd_scene load_steps=2 format=3 uid="uid://473bujt1rh0w"]
 
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bo0pwsa6hw5ue" path="res://Scenes/player.tscn" id="1_ebmjs"]
 
+[node name="Game" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_ebmjs")]
+position = Vector2(217, 137)
+=======
 [sub_resource type="GDScript" id="GDScript_2poj3"]
 script/source = "extends Node2D
 
@@ -20,6 +26,4 @@ func _process(delta: float) -> void:
 script = SubResource("GDScript_2poj3")
 
 [node name="Node2D" type="Node2D" parent="."]
-
-[node name="player" parent="." instance=ExtResource("1_ebmjs")]
-position = Vector2(134, 91)
+>>>>>>> refs/remotes/origin/main
